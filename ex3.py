@@ -2,7 +2,7 @@
 # TODO: Importer les modules nécessaires.
 from math import *
 
-speed = float(input("Quel est la vitesse de lancer ? "))
-angle = float(input("Quel est l'angle de lancement ? "))*pi/180
-d = (pow(speed,2)*sin(2*angle))/9.81
-print(f"La distance maximale en x est de {d}")
+speed = float(input("Vitesse initiale (m/s): "))
+angle = int(input("Angle de lancer (en degrés): "))*pi/180
+d = round((pow(speed,2)*sin(2*angle))/9.8,2)
+print(f"Distance parcourue: {d}m")

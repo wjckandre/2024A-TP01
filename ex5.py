@@ -1,8 +1,8 @@
 #TODO: Analyser la chaîne de caractères saisie et compter le nombre de médailles.
 #      Attention si la chaîne est invalide, un message d'erreur est attendu.
 
-country = input("Pays concerné :  ")
-code_medals = input("Resultat du pays : ")
+country = input("Pays concerné ? ")
+code_medals = input("Chaine représentant les médailles ? ")
 
 Gold = 0
 Silver = 0
@@ -21,4 +21,4 @@ for i in code_medals:
 if flag:
     print("Veuillez entrer une chaîne valide.")
 else:
-    print(f"Médialles: - Or: {Gold} - Argent: {Silver} - Bronze: {Bronze}")
+    print(f"{country}:\n- {Gold} OR\n- {Silver} Argent\n- {Bronze} Bronze")

@@ -52,7 +52,7 @@ class TestExercice2(unittest.TestCase):
         self.assertEqual(output, expected)
 
     def test_standard_water(self):
-        water_quantity = 1
+        water_quantity = 1.0
         expected_filter = 1
         expected_light = 1
         expected_chlorine = 0.1
