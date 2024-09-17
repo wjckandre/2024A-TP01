@@ -105,7 +105,7 @@ class TestExercice4(unittest.TestCase):
     def test_twelve_percents(self): 
         battery_percentage = 12
         simulated_inputs = f"{battery_percentage}\n"
-        distance = 44.5
+        distance = 42.0
         output = self.runner.run(simulated_inputs)
         expected = f"{self.input_questions}{distance} km\n"
         self.assertEqual(output, expected)
@@ -114,7 +114,7 @@ class TestExercice4(unittest.TestCase):
     def test_twenty_two(self): 
         battery_percentage = 22.5
         simulated_inputs = f"{battery_percentage}\n"
-        distance = 55.0
+        distance = 52.5
         output = self.runner.run(simulated_inputs)
         expected = f"{self.input_questions}{distance} km\n"
         self.assertEqual(output, expected)
@@ -123,7 +123,7 @@ class TestExercice4(unittest.TestCase):
     def test_seventy_four(self): 
         battery_percentage = 74
         simulated_inputs = f"{battery_percentage}\n"
-        distance = 118.0
+        distance = 116.0
         output = self.runner.run(simulated_inputs)
         expected = f"{self.input_questions}{distance} km\n"
         self.assertEqual(output, expected)
@@ -132,7 +132,7 @@ class TestExercice4(unittest.TestCase):
     def test_forty_nine(self): 
         battery_percentage = 49
         simulated_inputs = f"{battery_percentage}\n"
-        distance = 69.5
+        distance = 66.75
         output = self.runner.run(simulated_inputs)
         expected = f"{self.input_questions}{distance} km\n"
         self.assertEqual(output, expected)
