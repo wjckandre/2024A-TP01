@@ -19,6 +19,6 @@ for i in code_medals:
     else:
         flag = True
 if flag:
-    print("Veuillez entrer une chaîne valide.")
+    print("Ceci est une chaine invalide.")
 else:
-    print(f"{country}:\n- {Gold} OR\n- {Silver} Argent\n- {Bronze} Bronze")
+    print(f"{country}:\n- {Gold} Or\n- {Silver} Argent\n- {Bronze} Bronze")
